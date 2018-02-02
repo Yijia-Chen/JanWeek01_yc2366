@@ -1,1 +1,1 @@
-# JanWeek01_yc2366
+# files inside HackerPractice are named by lecture note#_page#
