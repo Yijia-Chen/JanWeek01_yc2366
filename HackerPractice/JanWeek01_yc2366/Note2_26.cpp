@@ -20,3 +20,10 @@ int main(){
 
 	return 0;
 }
+
+/*another way to observe the soft landing behavior:
+take square root instead of division*/
+  
+
+
+
