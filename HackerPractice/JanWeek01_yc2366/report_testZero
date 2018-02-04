@@ -1,0 +1,4 @@
+Note02_22 includes two functions: isPositiveZero and isNegativeZero.
+Use 1/x==+-INFINITY to test x
+To generate -0：use -1.0*0, or any float type number times 0.
+Note: it use -1*0, integer type number times 0 equals +0.
