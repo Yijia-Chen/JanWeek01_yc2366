@@ -1,9 +1,13 @@
 #Note02_19 
- observe the exception handling on your platform
+Observe the exception handling on your platform
  
 #Note02_20
- observe the overflow handling in integers
- 
+Observe the overflow handling in integers
+
+#Note02_22
+Use +1.0; –1.0; DBL_MAX; – 1.0*DBL_MAX; +0; –0;  INF, NINF; NaN; to test 
++0, –0, INF, NINF, NaN
+
 #Note02_26
 Observe the exception handling on your platform
 
