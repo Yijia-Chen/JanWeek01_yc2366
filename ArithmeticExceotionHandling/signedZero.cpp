@@ -3,24 +3,35 @@
 
 /*log(x) when x is limited to positive zero*/
 double logPZ() {
-	return log(0);
+	double i;
+	for (i=1000; i<INIFINTY; i*=i)
+	cout<< log(1/i) << endl;
 }
 
 /*log(x) when x is limited to negative zero*/
 double logNZ() {
-	return log(-0.0f);
+	double i;
+	for (i=1000; i<INIFINTY; i*=i)
+	cout<< log(-1/i) << endl;
 }
 
 /*sinc(x) when x is limited to positive zero*/
 double sincPZ() {
-	return sin(0) / +0;
+	double i;
+	for (i=1000; i<INIFINTY; i*=i)
+	cout<< sin(1/i)/(1/i) << endl;
+	
 }
 
 /*sinc(x) when x is limited to negative zero*/
 double sincNZ() {
-	return sin(-0.0f) / (-0.0f);
+	double i;
+	for (i=1000; i<INIFINTY; i*=i)
+	cout<< sin(-1/i)/(-1/i) << endl;
 }
 /*sin(x)/|x| when x is limited to negative zero*/
 double sincNZA() {
-	return sin(-1.0 * 0) / abs(-1.0 * 0);
+	double i;
+	for (i=1000; i<INIFINTY; i*=i)
+	cout<< sin(-1/i)/abs(-1/i) << endl;
 }
