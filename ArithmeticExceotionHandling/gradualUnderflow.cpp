@@ -40,9 +40,11 @@ double divUnderflow() {
 }
 
 double sinUnderflow(){
-	double x = 1 / geneINF();
-	double y;
-	y = sin(1.23456789012345*x) / x;
-	cout << y << endl;
+	for(int i =1000; i<INFINITY; i=i*i){
+		double x = 1 / i;
+		double y;
+		y = sin(1.23456789012345*x) / x;
+		cout << y << endl;
+	}
 	return 0;
 }
