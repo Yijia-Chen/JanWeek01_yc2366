@@ -50,16 +50,14 @@ int main(){
     
     int matrix[5][5]={{1,2,0,0,3},{4,5,6,0,0},{0,7,8,0,9},{0,0,0,10,0},{11,0,0,0,12}};
     int vecx[5][1] = {5,4,3,2,1};
+    int vecb[5][1]={0,0,0,0,0};
     
     for(i=1;i<=5;i++){
         for(j=1;j<=5;j++){
-            retrieveElement(i,j);
-            cout<<" ";
-            if(j==5) cout<<endl;
+            vecb[j-1][0] = vecb[j-1][0]+retrieveElement(i, j)*vecx[j-1][0];
+            if(j==5)  cout<<vecb[j-1][0]<<endl;
         }
     }
-    
     productAx(matrix, vecx);
-    
     return 0;
 }
