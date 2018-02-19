@@ -25,12 +25,10 @@ int retrieveElement(int x, int y){
     for(int i=rowPtr[x-1]; i<=rowPtr[x]-1;i++){
         if(colInd[i] == y-1){
             z=true;
-            cout<<value[i];
+            return value[i];
         }
     }
-    if(z==false) cout<<0;
-    
-    return 0;
+    if(z==false) return 0;
 }
 
 int productAx(int matrix[5][5], int vecx[5][1]){
