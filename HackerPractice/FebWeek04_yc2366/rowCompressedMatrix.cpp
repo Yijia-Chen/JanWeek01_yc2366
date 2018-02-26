@@ -75,7 +75,12 @@ void matrix3::rowScaling(int i, int j, double a){
 
 void matrix3::productAx()
 {
-	cout << "product of the matrix and vector is\n";
+	cout << "switch row[i] and row[j] for matrix A and vector x\n";
+	for (i=1;i<=sizeof(rowPtr);i++){
+	for (j=rowPtr[i];j<=rowPtr[i+1]-1;j++){
+	product[i]=product[i]+value[j]*xVector[colInd[j]];
+	}
+	}
 }
 int main()
 {
