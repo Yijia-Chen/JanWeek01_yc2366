@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cstream>
+#include <algorithm>
 using namespace std;
 class matrix3
 {
@@ -48,12 +49,30 @@ void matrix3::rowPermute()
     std::cout << '\n';
 
 }
-void matrix3::rowScaling()
-{
-	cout << "row scaling of the matrix is\n";
-
-  
+void matrix3::rowScaling(int i, int j, double a){
+	int k,l,c;
+	int des[], fac[];
+	//extract destination row
+	for(k = rowPtr[i-1]; k < rowPtr[i]; k++){
+		if(k-rowPtr[i-1]+1 == colInd[i])
+			des[k-rowPtr[i-1]+1] = value[k];
+		else des[k-rowPtr[i-1]+1] = 0;
+    }
+    //extract factor row
+    for(l=rowPtr[j-1]; l<rowPtr[j]; l++){
+    	if(l-rowPtr[j-1]+) == colInd[l])
+    		fac[l-rowPtr[j-1]+1] = value[l];
+    	else fac[l-rowPtr[j-1]+1] = 0;
+	}
+	
+	//calculate the result after *a and addition
+	c = max_element(ColInd,ColInd+sizeof(ColInd));
+	for(i=1; i<=c; i++){
+		des[i] += a*fac[i];
+		value[rowPtr[i-1]] = des[i];
+	}    
 }
+
 void matrix3::productAx()
 {
 	cout << "product of the matrix and vector is\n";
