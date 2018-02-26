@@ -67,9 +67,9 @@ void matrix3::rowScaling(int i, int j, double a){
 	
 	//calculate the result after *a and addition
 	c = max_element(ColInd,ColInd+sizeof(ColInd));
-	for(i=1; i<=c; i++){
-		des[i] += a*fac[i];
-		value[rowPtr[i-1]] = des[i];
+	for(k=1; k<=c; k++){
+		deski] += a*fac[k];
+		value[rowPtr[i-1]+k] = des[k];
 	}    
 }
 
