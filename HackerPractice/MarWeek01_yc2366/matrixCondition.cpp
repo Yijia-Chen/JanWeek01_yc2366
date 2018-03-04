@@ -1,3 +1,4 @@
+/*an example to test how entry can pollute the matrix when almost degenerate*/
 #include <iostream>
 #include <cmath>
 #include <limits>
