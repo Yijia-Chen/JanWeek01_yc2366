@@ -1,0 +1,18 @@
+forward Eular:
+2    epsilon: 0%
+5    epsilon: 19.2845%
+11.4022    epsilon: 23.1815%
+25.5132    epsilon: 24.2414%
+56.8493    epsilon: 24.542%
+Hune one step:
+2    epsilon: 0%
+6.70108    epsilon: 8.17618%
+16.3198    epsilon: 9.94935%
+37.1992    epsilon: 10.4589%
+83.3378    epsilon: 10.617%
+Hune Iterator:
+2    epsilon: 0%
+6.36087    epsilon: 2.68404%
+15.3022    epsilon: 3.09396%
+34.7433    epsilon: 3.16618%
+77.7351    epsilon: 3.18042%
