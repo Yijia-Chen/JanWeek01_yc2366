@@ -2,8 +2,8 @@
 //  main.cpp
 //  Week3
 //
-//  Created by YJ C on 2/10/18.
-//  Copyright © 2018 YJ C. All rights reserved.
+//  Created by Yijia Chen and Yazhi Fan on 4/8/18.
+//  Copyright © 2018 Yijia Chen and Yazhi Fan All rights reserved.
 //
 
 #include <iostream>
